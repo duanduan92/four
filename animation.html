@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关键帧动画</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				background: red;
+				/* 调用动画函数，说明动画执行的时间 */
+				animation: adt 1s;
+			}
+			
+			/*function adt(){
+				
+			}*/
+			/* 动画函数 */
+			@keyframes adt{
+				/* 函数体 */
+				0%{
+					background: red;
+					margin-left: 0;
+				}
+				100%{
+					background: blue;
+					margin-left: 200px;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div></div>
+		
+	</body>
+</html>
